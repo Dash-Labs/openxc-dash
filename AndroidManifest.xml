@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.openxc.dash" android:versionCode="1" android:versionName="1.0">
+    <uses-permission android:name="com.dashlabs.dash.permission.DASH_BROADCAST"/>
+    <service android:name="com.openxc.VehicleManager"/>
+    <service android:name="com.openxc.remote.VehicleService" android:process=":remote">
+        <intent-filter>
+            <action android:name="com.openxc.remote.VehicleServiceInterface" />
+        </intent-filter>
+    </service>
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17" />
+</manifest>

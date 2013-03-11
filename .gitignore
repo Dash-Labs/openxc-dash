@@ -7,3 +7,5 @@ target/
 .DS_Store
 gen/
 out/
+gen-external-apklibs/
+libs/
