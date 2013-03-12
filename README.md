@@ -9,10 +9,15 @@ values for diagnostic information produced by a running Dash service.
 Compilation
 -----------
 
-Dash uses [ply](http://github.com/blangel/ply) as its build tool, ensure you have it installed. Then run the following
-command:
+Just like [openxc-android](https://github.com/openxc/openxc-android), the build requires [Maven](http://maven.apache.org/download.html)
+v3.0.3+ and the [Android SDK](http://developer.android.com/sdk/index.html)
+to be installed in your development environment. In addition you'll need to set the `ANDROID_HOME` environment variable to the location of your SDK:
 
-    $ ply clean install
+    export ANDROID_HOME=/opt/tools/android-sdk
+
+After satisfying those requirements, run the standard maven command:
+
+    mvn clean install
 
 Setup
 ------
