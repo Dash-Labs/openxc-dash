@@ -19,13 +19,11 @@ After satisfying those requirements, run the standard maven command:
 
     mvn clean install
 
-Setup
-------
-
-
-
 Usage
 ------
 
 To use the `DashDataSource` install it like any other `OpenXC` [VehicleDataSource](https://github.com/openxc/openxc-android/blob/master/openxc/src/com/openxc/sources/VehicleDataSource.java) implementation.
 See the [OpenXC API Guide](http://openxcplatform.com/android/api-guide.html) for more information.
+Additionally, you must use the Dash Labs forked version of [openxc-android](https://github.com/Dash-Labs/openxc-android) as it includes the `DiagnosticTroubleCode`
+measurment object and a number of minor fixes.  Dash Labs is working with the `openxc` team to include these changes
+directly into the `openxc-android` project.
