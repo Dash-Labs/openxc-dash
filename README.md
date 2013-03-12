@@ -35,3 +35,6 @@ By using `openxc-dash` on phones with a version of [Dash](https://play.google.co
 and an OBD-II compliant hardware device, your project will get access to diagnostic trouble codes in real time.  This means that if an engine-light goes on
 your `openxc` project will receive a measurement reading [DiagnosticTroubleCode](https://github.com/Dash-Labs/openxc-android/blob/master/openxc/src/com/openxc/measurements/DiagnosticTroubleCode.java)
 whose value is a `String` representing the mechanic code (e.g., `P0001`).
+
+Note, as long as the vehicle supports the OBD-II hardware device (which is all cars 1996 or newer in the United States), you will receive these `DiagnosticTroubleCode` measurements.
+This isn't particular to Ford vehicles.
