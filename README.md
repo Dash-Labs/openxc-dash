@@ -27,3 +27,11 @@ See the [OpenXC API Guide](http://openxcplatform.com/android/api-guide.html) for
 Additionally, you must use the Dash Labs forked version of [openxc-android](https://github.com/Dash-Labs/openxc-android) as it includes the `DiagnosticTroubleCode`
 measurment object and a number of minor fixes.  Dash Labs is working with the `openxc` team to include these changes
 directly into the `openxc-android` project.
+
+What You Get
+------------
+
+By using `openxc-dash` on phones with a version of [Dash](https://play.google.com/store/apps/details?id=com.dashlabs.dash.android) installed,
+and an OBD-II compliant hardware device, your project will get access to diagnostic trouble codes in real time.  This means that if an engine-light goes on
+your `openxc` project will receive a measurement reading [DiagnosticTroubleCode](https://github.com/Dash-Labs/openxc-android/blob/master/openxc/src/com/openxc/measurements/DiagnosticTroubleCode.java)
+whose value is a `String` representing the mechanic code (e.g., `P0001`).
